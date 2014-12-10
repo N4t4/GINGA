@@ -1,0 +1,51 @@
+body{
+}
+
+section {
+	width: auto;
+	height: auto;
+	display: inline-block;
+}
+
+section>*{
+	width: 300px;
+	margin-left: 2px;
+}
+
+.bt-3{
+	margin: auto;
+}
+.bt{
+	position: absolute;
+	right: 5px;
+	bottom: 5px;
+}
+
+.box-login{
+	height:250px;
+	position: relative;
+}
+.box-login p{
+	display: block;
+	width: 100%;
+	padding-left: 5px;
+}
+.box-login h1{
+	margin: 5px;
+}
+.box-login input[type="email"],
+.box-login input[type="password"]{
+	margin: auto;
+	display: block;
+	width: 95%;
+}
+.box-login .error{
+	width: auto;
+	height: auto;
+}
+
+
+@media (max-width: 480px) {
+}
+@media (min-width: 480px) {
+}

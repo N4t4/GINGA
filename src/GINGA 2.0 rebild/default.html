@@ -1,0 +1,115 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<script src="js/jquery.js"></script>
+	<script src="js/global.js"></script>
+	<link rel="stylesheet" href="css/style.css" />
+	<link rel="shortcut icon" href="img/ico.ico" />
+	<style>
+
+		body,
+		.color,
+		.act:hover,
+		.fm-media input,
+		.fm-padrao>header,
+		.fm-padrao>footer,
+		.ed-img
+		{
+			background-color: #D8B113;
+		}
+		.box-color{
+			box-shadow: 0 0 25px #D8B113;
+		}
+		
+		.act:active,
+		.ed-file label
+		{
+			border: solid 1px #D8B113;
+		}
+		
+		.act:active{
+			background-color: #FFFFFF;
+			top: -2;
+		}
+		.bt{ float: right;}
+
+
+		body{ background-image: url("img/lock.png");}
+		body>section{
+			background-color: #FFF;
+			width: 320px;
+			position: absolute;
+			padding: 10px;
+			border: 5px solid;
+			border-top-left-radius: 5px;
+			border-top-right-radius: 5px;
+			border-bottom-right-radius: 5px;
+			border-bottom-left-radius: 5px;
+			box-shadow: 0px 0px 5px inset;
+		}
+		body>section input[type="email"],
+		body>section input[type="password"]{ width: 99%;}
+		body>section footer p{ font-size: 12px; }
+		body>section img{
+			margin: auto;
+			display: block;
+		}
+
+		h1{	display: none;}
+	</style>
+</head>
+<body>
+
+	<header>
+		<img src="img/ginga_logo.png" width="120px">
+		<h1>Ginga 3.0</h1>
+	</header>
+	
+	<section class="in-center">
+		<form>
+			<article>
+				<header>
+					<h2>Login</h2>
+					<img src="#" style="display: " height="142px" width="107px">
+				</header>
+				<section>
+					<p>E-mail:</p>
+					<input type="email" id="init" nome="lg-email"> 
+					<p>Senha:</p>
+					<input type="password" nome="lg-email"> 
+				</section>
+				<footer>
+					<p>Ainda n&atilde;o &eacute; membro? Cadastre-se <a href="#">aqui</a>.</p>
+					<input type="button" class="bt color" value="Entrar">
+				</footer>
+			</article>
+		</form>
+	</section>
+	
+	<footer>
+		<p>Ginga 3.0</p>
+	</footer>
+	
+	<!--Rand Color-->
+	<script>
+		$(document).ready(function(){
+			var R = parseInt(Math.random()*155);
+			var G = parseInt(Math.random()*155);
+			var B = parseInt(Math.random()*155);
+
+			$("body, .color, h1").css("background-color", "rgb("+R+" ,"+G+" ,"+B+")");
+			$("body").css("color", "rgb("+R+" ,"+G+" ,"+B+")");
+
+			$("#init").focus();
+
+		});	
+	</script>
+	
+</body>
+
+</html>
+
+
+

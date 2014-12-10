@@ -1,0 +1,341 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<script src="js/jquery.js"></script>
+	<script src="js/global.js"></script>
+	<link rel="stylesheet" href="css/style.css" />
+	<style>
+
+		body,
+		.color,
+		.act:hover,
+		.fm-media input,
+		.drag input,
+		#move input,
+		.fm-padrao>header,
+		.fm-padrao>footer,
+		.ed-img
+		{
+			background-color: #13D8D8;
+		}
+		.act:active,
+		.ed-file label
+		{
+			border: solid 1px #13D8D8;
+		}
+		.act:active{
+			background-color: #FFFFFF;
+			top: -2;
+		}
+
+		/****TESTES*******/
+
+		ul{
+			background-color: #FFF;
+		}
+	</style>
+</head>
+<body>
+
+	<header>
+		<img src="img/ginga_logo.png">
+		<h1>Drag</h1>
+	</header>
+	
+	<section>
+
+		<div class="ls-1">
+			<header>
+				<h2>Title</h2>
+			</header>
+			<ul class="drag" group="drag01">
+				<li class="ls-1-li" text="TESTE1"><a class="act" href="#">Item1</a></li>
+				<li class="ls-1-li" text="TESTE2"><a class="act" href="#">Item2</a></li>
+				<li class="ls-1-li" text="TESTE3"><a class="act" href="#">Item3</a></li>
+				<li class="ls-1-li" text="TESTE4"><a class="act" href="#">Item4</a></li>
+				<li class="ls-1-li" text="TESTE5"><a class="act" href="#">Item5</a></li>
+			</ul>
+		</div>
+		<div class="ls-1">
+			<header>
+				<h2>Title</h2>
+			</header>
+			<ul class="drag" group="drag01">
+				<li class="ls-1-li"><a class="act" href="#">Item6</a></li>
+				<li class="ls-1-li"><a class="act" href="#">Item7</a></li>
+				<li class="ls-1-li"><a class="act" href="#">Item8</a></li>
+				<li class="ls-1-li"><a class="act" href="#">Item9</a></li>
+				<li class="ls-1-li"><a class="act" href="#">Item10</a></li>
+			</ul>
+		</div>
+
+		<input type="text" value="NADA " class="drag" group="drag01">
+		
+		<div class="ls-2" style="position: absolute; left: 0; top: 400px;">
+			<header>
+				<h2>Title</h2>
+			</header>
+			<ul class="drag">
+				<li class="ls-2-li"><a class="act" href="#"><p>Item1</p><img src="#" alt="#"></a></li>
+				<li class="ls-2-li"><a class="act" href="#"><p>Item2</p><img src="#" alt="#"></a></li>
+				<li class="ls-2-li"><a class="act" href="#"><p>Item3</p><img src="#" alt="#"></a></li>
+				<li class="ls-2-li"><a class="act" href="#"><p>Item4</p><img src="#" alt="#"></a></li>
+				<li class="ls-2-li"><a class="act" href="#"><p>Item5</p><img src="#" alt="#"></a></li>
+				<li class="ls-2-li"><a class="act" href="#"><p>Item6</p><img src="#" alt="#"></a></li>
+			</ul>
+		</div>
+
+		<div class="ls-2" style="position: absolute; right: 0; top: 400px;">
+			<header>
+				<h2>Title</h2>
+			</header>
+			<ul class="drag">
+				<li class="ls-2-li"><a class="act" href="#"><p>Item7</p><img src="#" alt="#"></a></li>
+				<li class="ls-2-li"><a class="act" href="#"><p>Item8</p><img src="#" alt="#"></a></li>
+				<li class="ls-2-li"><a class="act" href="#"><p>Item9</p><img src="#" alt="#"></a></li>
+				<li class="ls-2-li"><a class="act" href="#"><p>Item10</p><img src="#" alt="#"></a></li>
+			</ul>
+		</div>
+
+		<div class="ls-3" style="position: absolute; left: 0; top: 800px;">
+			<header>
+				<h2>Title</h2>
+			</header>
+			<ul class="drag">
+				<li class="ls-3-li"><a class="act" href="#"><img src="#" alt="#"></a></li>
+				<li class="ls-3-li"><a class="act" href="#"><img src="#" alt="#"></a></li>
+				<li class="ls-3-li"><a class="act" href="#"><img src="#" alt="#"></a></li>
+				<li class="ls-3-li"><a class="act" href="#"><img src="#" alt="#"></a></li>
+				<li class="ls-3-li"><a class="act" href="#"><img src="#" alt="#"></a></li>
+				<li class="ls-3-li"><a class="act" href="#"><img src="#" alt="#"></a></li>
+			</ul>
+		</div>
+		
+		<div class="ls-3" style="position: absolute; right: 320px; top: 800px;">
+			<header>
+				<h2>Title</h2>
+			</header>
+			<ul class="drag">
+				<li class="ls-3-li"><a class="act" href="#"><img src="#" alt="#"></a></li>
+				<li class="ls-3-li"><a class="act" href="#"><img src="#" alt="#"></a></li>
+				<li class="ls-3-li"><a class="act" href="#"><img src="#" alt="#"></a></li>
+				<li class="ls-3-li"><a class="act" href="#"><img src="#" alt="#"></a></li>
+				<li class="ls-3-li"><a class="act" href="#"><img src="#" alt="#"></a></li>
+				<li class="ls-3-li"><a class="act" href="#"><img src="#" alt="#"></a></li>
+			</ul>
+		</div>
+
+		<div class="ls-3" style="position: absolute; right: 0; top: 800px;">
+			<header>
+				<h2>Title</h2>
+			</header>
+			<ul class="drag">
+				<li class="ls-3-li"><a class="act" href="#"><img src="#" alt="#"></a></li>
+				<li class="ls-3-li"><a class="act" href="#"><img src="#" alt="#"></a></li>
+				<li class="ls-3-li"><a class="act" href="#"><img src="#" alt="#"></a></li>
+				<li class="ls-3-li"><a class="act" href="#"><img src="#" alt="#"></a></li>
+				<li class="ls-3-li"><a class="act" href="#"><img src="#" alt="#"></a></li>
+				<li class="ls-3-li"><a class="act" href="#"><img src="#" alt="#"></a></li>
+			</ul>
+		</div>
+
+		<textarea cols="35">Adicionar classe "drag" em uma lista qualquer."</textarea>
+	</section>
+	
+	<footer>footer</footer>
+
+	<script>
+		
+		var execute_end_grag = function(){};
+		function DragInit(){
+
+			if($("#move").length == 0)
+				$("body").append('<div id="move">Oi</div>');
+
+			if($(".drag>li>.bt-move").length == 0)
+				$(".drag>li").append('<input class="bt-move" type="button">');
+			
+			$(".drag .bt-move").css("opacity", 0);
+			var view_move = function(){
+
+				$(this).find(".bt-move").animate(
+					{opacity: 1},
+					500
+				);
+
+				$(this).unbind("mouseleave").mouseleave(function(){
+
+					if($(this).css("opacity") != 1) return;
+
+					$(this).find(".bt-move").animate(
+						{opacity: 0},
+						250
+					);
+				});
+			}
+			$(".bt-move").parent().unbind("mouseenter").mouseenter(view_move);
+			$("#move").css("display", "none");
+
+			var Actions = function(e){
+				
+				var bt   = $(this);
+				var item = $(this).parent();
+				
+				bt.unbind("mouseleave");
+				item.css("opacity", 0.42);
+
+				$("#move").css("display", "block");
+				$("#move").css("backgroundColor", item.css("backgroundColor"));
+				$("#move").html( item.html() );
+				$("#move").width( item.width() );
+				$("#move").height( item.height() );
+				$("#move").attr("class", item.attr("class"));
+				$("#move").attr("text", item.attr("text"));
+				
+				$("#move").css("top", e.pageY - bt.width());
+				$("#move").css("left", e.pageX - ($("#move").width() - bt.width()) );									
+				
+				function Soltar(pageX, pageY, owner){
+				
+					var IN = undefined;
+					
+					$('.drag').each(function(){
+						
+						var pos = getPosition(this);
+						
+						if($(this).is($(owner))) return;
+
+						if(
+							(pageX > pos.x && (pageX  < (pos.x + $(this).width()))) 
+							&&
+							(pageY > pos.y && (pageY  < (pos.y + $(this).height())))
+						)
+						{
+							IN = $(this);
+							
+							if( IN.attr("group") != owner.attr("group") ){
+
+								IN = undefined;
+								return false;
+							}
+
+
+							IN.addClass("drag-in");
+							
+							if($(this).find(".temp").length == 0){
+								IN.append("<li class='temp'>"+item.html()+"</li>");
+								IN.animate({scrollTop: getTop( $(this).find(".temp") )}, 500);
+							}
+							
+							
+						}else{
+							$(this).find(".temp").remove();
+							$(this).removeClass("drag-in");
+						}
+					});
+
+					return IN;
+					
+				}
+
+				$(window).mousemove(function(e){
+					
+					$("#move").css("top", e.pageY - bt.width());
+					$("#move").css("left", e.pageX - ($("#move").width() - bt.width()) );					
+					Soltar(e.pageX, e.pageY, item.parent());
+				});
+
+				$(window).mouseup(function(e){
+
+					var new_list = Soltar(e.pageX, e.pageY, item.parent());
+					
+					if(new_list != undefined){
+
+						var pos = null;
+
+						if( new_list.is("input") ){
+							
+							new_list.val(new_list.val() + $("#move").attr("text"));	
+
+							pos = getPosition(new_list);
+
+							$("#move").animate(
+								{top: pos.y, left: pos.x},
+								500,
+								function(){
+									$("#move").html("");
+									$("#move").css("display", "none");
+									$("#move").attr("class", "");
+									$("#move").attr("text", null);
+									$(".temp").attr("class", item.attr("class"));
+									item.css("opacity", 0);
+									item.remove();
+									$(".temp").removeClass("temp");
+									$(".drag").removeClass("drag-in");
+									$(".drag .bt-move").unbind("mousedown").mousedown(Actions);
+									$(".bt-move").parent().unbind("mouseenter").mouseenter(view_move);
+									execute_end_grag();
+									execute_end_grag = function(){};
+								}
+							);
+						}
+
+						if(new_list.is("ul"))
+						{
+							$(".temp").html(item.html());
+							pos = getPosition(".temp");
+
+							$("#move").animate(
+								{top: pos.y, left: pos.x},
+								500,
+								function(){
+									$("#move").html("");
+									$("#move").css("display", "none");
+									$("#move").attr("class", "");
+									$(".temp").attr("class", item.attr("class"));
+									item.css("opacity", 0);
+									item.remove();
+									$(".temp").removeClass("temp");
+									$(".drag").removeClass("drag-in");
+									$(".drag .bt-move").unbind("mousedown").mousedown(Actions);
+									$(".bt-move").parent().unbind("mouseenter").mouseenter(view_move);
+									execute_end_grag();
+									execute_end_grag = function(){};
+								}
+							);
+						}
+
+					} else {
+						var pos = getPosition(item);
+						
+						$("#move").animate(
+							{top: pos.y, left: pos.x},
+							250,
+							function(){
+								$("#move").html("");
+								$("#move").css("display", "none");
+								item.css("opacity", 1);
+								$(".drag").removeClass("drag-in");
+								$(".drag .bt-move").unbind("mousedown").mousedown(Actions);
+								$(".bt-move").parent().unbind("mouseenter").mouseenter(view_move);
+							}
+						);
+					}
+
+					$(".bt-move").animate( {opacity: 0}, 1000);
+
+					$(this).unbind("mousemove");
+					$(this).unbind("mouseup");
+				});
+			}
+
+			$(".drag .bt-move").unbind("mousedown").mousedown(Actions);
+		}
+		DragInit();
+	</script>
+	
+</body>
+
+</html>

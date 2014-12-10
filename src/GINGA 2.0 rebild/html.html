@@ -1,0 +1,473 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<script src="js/jquery.js"></script>
+	<script src="js/global.js"></script>
+	<link rel="stylesheet" href="css/style.css" />
+	<style>
+
+		body,
+		.color,
+		.act:hover,
+		.fm-media input,
+		.fm-padrao>header,
+		.fm-padrao>footer,
+		.ed-img
+		{
+			background-color: #D8B113;
+		}
+		.act:active,
+		.ed-file label
+		{
+			border: solid 1px #D8B113;
+		}
+		.act:active{
+			background-color: #FFFFFF;
+			top: -2;
+		}
+
+
+	</style>
+</head>
+<body>
+
+	<header>
+		<img src="img/ginga_logo.png">
+		<h1>Componentes</h1>
+	</header>
+	
+	<section>
+		
+		<article>
+			<header>
+				<h2>Bot&otilde;es</h2>
+			</header>
+
+			<section>
+				<input type="button" class="bt" value="Salvar">
+				<textarea cols="48"rows="1"><input type="button" class="bt" value="Salvar"></textarea>
+				<input type="button" class="bt-2" value="Salvar">
+				<textarea cols="48"rows="1"><input type="button" class="bt-2" value="Salvar"></textarea>
+				<input type="button" class="bt-3" value="Salvar">
+				<textarea cols="48"rows="1"><input type="button" class="bt-3" value="Salvar"></textarea>
+
+				<input type="button" class="bt-sk2" value="Salvar">
+				<textarea cols="51" rows="1"><input type="button" class="bt-sk2" value="Salvar"></textarea>
+				<input type="button" class="bt-2-sk2" value="Salvar">
+				<textarea cols="51" rows="1"><input type="button" class="bt-2-sk2" value="Salvar"></textarea>
+				<input type="button" class="bt-3-sk2" value="Salvar">
+				<textarea cols="51" rows="1"><input type="button" class="bt-3-sk2" value="Salvar"></textarea>	
+				<input type="button" id="bt-chat">
+				<textarea><input type="button" id="bt-chat"></textarea>
+				<input type="button" id="bt-atz">
+				<textarea><input type="button" id="bt-atz"></textarea>
+				<input type="button" id="bt-msm">
+				<textarea><input type="button" id="bt-msm"></textarea>
+				<input type="button" id="bt-yes">
+				<textarea><input type="button" id="bt-yes"></textarea>
+			</section>
+
+			<section>
+
+				<label class="line">
+					<input class="bt-add" type="button"> 
+					Adicionar 
+				</label>
+				<textarea cols="74"rows="1"><label class="line"><input class="bt-add" type="button" >Adicionar</label></textarea>
+				
+				<label class="line">
+					<input class="bt-rem" type="button" >
+					Remover
+				</label>
+				<textarea cols="74"rows="1"><label class="line"><input class="bt-rem" type="button" >Adicionar</label></textarea>
+				
+				<label class="line">
+					<input class="bt-at" type="button" > 
+					Atualizar
+				</label>
+				<textarea cols="74"rows="1"><label class="line"><input class="bt-at" type="button" >Adicionar</label></textarea>
+
+				<label class="line">
+					<input class="bt-right" type="button" > 
+					Direita
+				</label>
+				<textarea cols="74"rows="1"><label class="line"><input class="bt-right" type="button" >Adicionar</label></textarea>
+				
+				<label class="line">
+					<input class="bt-left" type="button" > 
+					Esquerda
+				</label>
+				<textarea cols="74"rows="1"><label class="line"><input class="bt-left" type="button" >Adicionar</label></textarea>
+				
+				<label class="line">
+					<input class="bt-next" type="button" > 
+					Proximo
+				</label>
+				<textarea cols="74"rows="1"><label class="line"><input class="bt-next" type="button" >Adicionar</label></textarea>
+				
+				<label class="line">
+					<input class="bt-prev" type="button" > 
+					Anterior
+				</label>
+				<textarea cols="74"rows="1"><label class="line"><input class="bt-prev" type="button" >Adicionar</label></textarea>
+
+				<label class="line">
+					<input class="bt-move" type="button" > 
+					Mover
+				</label>
+				<textarea cols="74"rows="1"><label class="line"><input class="bt-move" type="button" >Adicionar</label></textarea>
+
+				<label class="line">
+					<input class="bt-view" type="button" > 
+					Ver
+				</label>
+				<textarea cols="74"rows="1"><label class="line"><input class="bt-view" type="button" >Adicionar</label></textarea>
+
+				<label class="line">
+					<input class="bt-ed" type="button" > 
+					Editar
+				</label>
+				<textarea cols="74"rows="1"><label class="line"><input class="bt-ed" type="button" >Adicionar</label></textarea>
+
+				<label class="line">
+					<input class="bt-up" type="button" > 
+					Subir
+				</label>
+				<textarea cols="74"rows="1"><label class="line"><input class="bt-up" type="button" >Adicionar</label></textarea>
+
+				<label class="line">
+					<input class="bt-down" type="button" > 
+					Descer
+				</label>
+				<textarea cols="74"rows="1"><label class="line"><input class="bt-down" type="button" >Adicionar</label></textarea>
+				
+				<label class="line">
+					<input class="bt-am" type="button" > 
+					Ajuda
+				</label>
+				<textarea cols="74"rows="1"><label class="line"><input class="bt-am" type="button" >Adicionar</label></textarea>
+
+				<label class="line">
+					<input class="bt-membros" type="button" > 
+					Membros
+				</label>
+				<textarea cols="74"rows="1"><label class="line"><input class="bt-membros" type="button" >Membros</label></textarea>
+
+				<label class="line">
+					<input class="bt-config" type="button" > 
+					Configur&ccedil;&atilde;o
+				</label>
+				<textarea cols="74"rows="1"><label class="line"><input class="bt-membros" type="button" >Membros</label></textarea>
+
+			</section>
+		</article>
+
+		<article style="background-color: #FFFFFF">
+			<header>
+				<h2>Lists</h2>
+			</header>
+
+			<section>
+				<div class="ls-1">
+					<header>
+						<h2>Title</h2>
+					</header>
+					<ul>
+						<li><a class="act" href="#">Item1Item1Item1</a></li>
+						<li><a class="act" href="#">Item1</a></li>
+						<li><a class="act" href="#">Item1</a></li>
+						<li><a class="act" href="#">Item1</a></li>
+						<li><a class="act" href="#">Item1</a></li>
+					</ul>
+				</div>
+				<br>
+<textarea cols="68" rows="12" >
+<div class="ls-1">
+	<header>
+		<h2>Title</h2>
+	</header>
+	<ul>
+		<li><a class="act" href="#">Item1Item1Item1</a></li>
+		<li><a class="act" href="#">Item1</a></li>
+		<li><a class="act" href="#">Item1</a></li>
+		<li><a class="act" href="#">Item1</a></li>
+		<li><a class="act" href="#">Item1</a></li>
+	</ul>
+</div></textarea>
+
+				<div class="ls-2">
+					<header>
+						<h2>Title</h2>
+					</header>
+					<ul>
+						<li><a class="act" href="#"><p>Item1</p><img src="#" alt="#"></a></li>
+						<li><a class="act" href="#"><p>Item2</p><img src="#" alt="#"></a></li>
+						<li><a class="act" href="#"><p>Item3</p><img src="#" alt="#"></a></li>
+						<li><a class="act" href="#"><p>Item4</p><img src="#" alt="#"></a></li>
+						<li><a class="act" href="#"><p>Item5</p><img src="#" alt="#"></a></li>
+					</ul>
+				</div>
+				<textarea>				
+					<div class="ls-2">
+						<header>
+							<h2>Title</h2>
+						</header>
+						<ul>
+							<li><a class="act" href="#"><p>Item1</p><img src="#" alt="#"></a></li>
+							<li><a class="act" href="#"><p>Item2</p><img src="#" alt="#"></a></li>
+							<li><a class="act" href="#"><p>Item3</p><img src="#" alt="#"></a></li>
+							<li><a class="act" href="#"><p>Item4</p><img src="#" alt="#"></a></li>
+							<li><a class="act" href="#"><p>Item5</p><img src="#" alt="#"></a></li>
+						</ul>
+					</div>
+				</textarea>
+
+				<div class="ls-3">
+					<header>
+						<h2>Title</h2>
+					</header>
+					<ul>
+						<li><a class="act" href="#"><img src="#" alt="#"></a></li>
+						<li><a class="act" href="#"><img src="#" alt="#"></a></li>
+						<li><a class="act" href="#"><img src="#" alt="#"></a></li>
+						<li><a class="act" href="#"><img src="#" alt="#"></a></li>
+						<li><a class="act" href="#"><img src="#" alt="#"></a></li>
+					</ul>
+				</div>
+				<textarea>
+					<div class="ls-3">
+						<header>
+							<h2>Title</h2>
+						</header>
+						<ul>
+							<li><a class="act" href="#"><img src="#" alt="#"></a></li>
+							<li><a class="act" href="#"><img src="#" alt="#"></a></li>
+							<li><a class="act" href="#"><img src="#" alt="#"></a></li>
+							<li><a class="act" href="#"><img src="#" alt="#"></a></li>
+							<li><a class="act" href="#"><img src="#" alt="#"></a></li>
+						</ul>
+					</div>
+				</textarea>
+				<br>
+				
+				<div class="ls-change">
+					<header>
+						<h2>Title</h2>
+					</header>
+					<ul>
+						<li><label class="act"><input type="radio" name="ridio" value="1" checked><p>valoe</p></label></li>
+						<li><label class="act"><input type="radio" name="ridio" value="2"><p>valoe</p></label></li>
+						<li><label class="act"><input type="radio" name="ridio" value="3"><p>valoe</p></label></li>
+						<li><label class="act"><input type="radio" name="ridio" value="4"><p>valoe</p></label></li>
+						<li><label class="act"><input type="radio" name="ridio" value="5"><p>valoe</p></label></li>
+					</ul>
+				</div>
+				<br>
+				<textarea>
+				<div class="ls-change">
+					<header>
+						<h2>Title</h2>
+					</header>
+					<ul>
+						<li><label class="act"><input type="radio" name="ridio" value="1" checked><p>valoe</p></label></li>
+						<li><label class="act"><input type="radio" name="ridio" value="2"><p>valoe</p></label></li>
+						<li><label class="act"><input type="radio" name="ridio" value="3"><p>valoe</p></label></li>
+						<li><label class="act"><input type="radio" name="ridio" value="4"><p>valoe</p></label></li>
+						<li><label class="act"><input type="radio" name="ridio" value="5"><p>valoe</p></label></li>
+					</ul>
+				</div>
+				</textarea>
+
+				<br>
+
+				<div class="ls-change">
+					<header>
+						<h2>Title</h2>
+					</header>
+					<ul>
+						<li><label class="act"><input type="checkbox" name="check" value="1" checked><p>valoe</p></label></li>
+						<li><label class="act"><input type="checkbox" name="check" value="1"><p>valoe</p></label></li>
+						<li><label class="act"><input type="checkbox" name="check" value="1"><p>valoe</p></label></li>
+						<li><label class="act"><input type="checkbox" name="check" value="1"><p>valoe</p></label></li>
+						<li><label class="act"><input type="checkbox" name="check" value="1"><p>valoe</p></label></li>
+						<li><label class="act"><input type="checkbox" name="check" value="1"><p>valoe</p></label></li>
+						<li><label class="act"><input type="checkbox" name="check" value="1"><p>valoe</p></label></li>
+					</ul>
+				</div>
+				<br>
+
+				<div class="ls-noticia">
+					<header>
+						<h2>Title</h2>
+					</header>
+					<ul>
+						<li><a class="act" href="#">
+							<header><h4>Title</h4></header>
+							<p>Item1Item1Item1Item1Item1Item1Item1Item1Item1Item1Item1Item1Item1Item1Item1Item1Item1Item1Item1Item1Item1Item1Item1Item1Item1Item1Item1Item1Item1Item1Item1Item1Item1Item1Item1Item1</p>
+							<strong>Projeto esta em 90%</strong>
+							<img src="#" alt="#">
+						</a></li>
+						<li><a class="act" href="#">
+							<header><h4>Natã Concluiu uma nove tarefa</h4></header>
+							<p>Item1Item1Item1Item1Item1Item1Item1Item1Item1Item1Item1Item1Item1Item1Item1Item1Item1Item1Item1Item1Item1Item1Item1Item1Item1Item1Item1Item1Item1Item1Item1Item1Item1Item1Item1Item1</p>
+							<img src="#" alt="#">
+						</a></li>
+						<li><a class="act" href="#">
+							<header><h4>Gerente criou nova tarefa para natã</h4></header>
+							<p>Item1Item1Item1Item1Item1Item1Item1Item1Item1Item1Item1Item1Item1Item1Itemem1Item1Item1Item1Item1Item1Item1Item1</p>
+							<img src="#" alt="#">
+						</a></li>
+					</ul>
+				</div>
+				<div style="width: 600px;">
+					<div class="ls-coments">
+						<header>
+							<h2>Coment&aacute;rio</h2>
+						</header>
+						<ul>
+							<li>
+								<header><h4>Nome1</h4></header>
+								<img src="#" alt="#">
+								<p>Item1Item1Item1Item1Item1Item1Item1Item1Item1Item1Item1Item1Item1Item1Item1Item1Item1Item1Item1Item1Item1Item1Item1Item1Item1Item1Item1Item1Item1Item1Item1Item1Item1Item1Item1Item1</p>
+								<strong>11 de Novembro de 2013, 20:43h</strong>
+							</li>
+							<li>
+								<header><h4>Nome2</h4></header>
+								<img src="#" alt="#">
+								<p>Item1Item1Item1Item1Item1Item1Item1Item1Item1Item1Item1Item1Item1Item1Item1Item1Item1Item1Item1Item1Item1Item1Item1Item1Item1Item1Item1Item1Item1Item1Item1Item1Item1Item1Item1Item1</p>
+								<strong>11 de Novembro de 2013, 20:43h</strong>
+							</li>
+							<li>
+								<header><h4>Nome3</h4></header>
+								<img src="#" alt="#">
+								<p>Item1Item1Item1Item1Item1Item1Item1Item1Item1Item1Item1Item1Item1Item1Itemem1Item1Item1Item1Item1Item1Item1Item1</p>
+								<strong>11 de Novembro de 2013, 20:43h</strong>
+							</li>
+						</ul>
+					</div>
+				</div>
+<textarea><div style="width: 600px;">
+	<div class="ls-coments">
+		<header>
+			<h2>Coment&aacute;rio</h2>
+		</header>
+		<ul>
+			<li>
+				<header><h4>Nome1</h4></header>
+				<img src="#" alt="#">
+				<p>Item1Item1Item1Item1Item1Item1Item1Item1Item1Item1Item1Item1Item1Item1Item1Item1Item1Item1Item1Item1Item1Item1Item1Item1Item1Item1Item1Item1Item1Item1Item1Item1Item1Item1Item1Item1</p>
+				<strong>11 de Novembro de 2013, 20:43h</strong>
+			</li>
+			<li>
+				<header><h4>Nome2</h4></header>
+				<img src="#" alt="#">
+				<p>Item1Item1Item1Item1Item1Item1Item1Item1Item1Item1Item1Item1Item1Item1Item1Item1Item1Item1Item1Item1Item1Item1Item1Item1Item1Item1Item1Item1Item1Item1Item1Item1Item1Item1Item1Item1</p>
+				<strong>11 de Novembro de 2013, 20:43h</strong>
+			</li>
+			<li>
+				<header><h4>Nome3</h4></header>
+				<img src="#" alt="#">
+				<p>Item1Item1Item1Item1Item1Item1Item1Item1Item1Item1Item1Item1Item1Item1Itemem1Item1Item1Item1Item1Item1Item1Item1</p>
+				<strong>11 de Novembro de 2013, 20:43h</strong>
+			</li>
+		</ul>
+	</div>
+</div></textarea>
+
+				<select class="sel-1 act">
+					<option><a>Item1 Item1 Item1 Item1 Item1</a></option>
+					<option><a>Item2 Item2 Item2 Item2 </a></option>
+					<option><a>Item3 Item3 Item3</a></option>
+					<option><a>Item4 Item4</a></option>
+					<option><a>Item5</a></option>
+				</select>
+				<br>
+				<textarea>
+					<select class="sel-1">
+						<option><a>Item1 Item1 Item1 Item1 Item1</a></option>
+						<option><a>Item2 Item2 Item2 Item2 </a></option>
+						<option><a>Item3 Item3 Item3</a></option>
+						<option><a>Item4 Item4</a></option>
+						<option><a>Item5</a></option>
+					</select>
+				</textarea>
+			</section>
+		</article>
+
+		<article style="background-color: #FFFFFF">
+			<header>
+				<h2>Files</h2>
+			</header>
+			<section>
+	          	<div class="ed-img" style="width: 100px">
+                    <p>Imagem</p>
+                    <img class="landscape" src="#" alt="VAZIO">
+                    <label>
+	                    <input type="file" name="conf_img" onchange="readIMG(this);"/>
+	                </label>
+                </div>
+			</section>
+
+				<div class="ed-file">
+                    <p>File-1</p><br>
+                    <label>
+	                    <input type="file" name="conf_img" onchange="readFILE(this);"/>
+                    	<p>VAZIO</p>
+                    	<input class="bt-add color" type="button" >
+	                </label>
+                </div><br>
+                <div class="ed-file">
+                    <p>File-2</p><br>
+                    <label>
+	                    <input type="file" name="conf_img" onchange="readFILE(this);"/>
+                    	<p>VAZIO</p>
+                    	<input class="bt-add color" type="button" >
+	                </label>
+                </div>
+                <textarea><div class="ed-file">
+                    <p>File-2</p><br>
+                    <label>
+	                    <input type="file" name="conf_img" onchange="readFILE(this);"/>
+                    	<p>VAZIO</p>
+                    	<input class="bt-add color" type="button" >
+	                </label>
+                </div>
+                </textarea>
+		</article>
+
+	</section>
+	
+	<footer style="position: relative">footer</footer>
+
+	<script>
+		function readIMG(input) { 	
+			if (input.files && input.files[0]) { 	
+				var reader = new FileReader();  	
+				reader.onload = function (e) { 	
+					$(input).parent().parent().find("img") 	
+					.attr('src', e.target.result); 	
+				};  	
+				reader.readAsDataURL(input.files[0]); 	
+			} 	
+		}
+
+		function readFILE(input) { 	
+			if (input.files && input.files[0]) { 	
+				var reader = new FileReader();  	
+				reader.onload = function (e) { 	
+					$(input).parent().find("p") 	
+					.html(input.files[0].name); 	
+				};  	
+				reader.readAsDataURL(input.files[0]); 	
+			} 	
+		} 	
+	</script>
+	
+</body>
+
+</html>
+
+
+
